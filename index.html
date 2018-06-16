@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <h1>Slot Machine App:</h1>
+    </header>
+
+    <section class="slotBox">
+      <section class="betSection">
+        <h1>Welcome to the Character Selection!</h1>
+        <p> Enter a number amount to play. Between each spin place a bet for a chance to win!</p>
+        <input id="enterAmount" type="text" name="" value="">
+        <button id="submitBet" type="button" name="button">Submit</button>
+        <h1 id="result">0</h1>
+        <h1 id="youBet"></h1>
+      </section>
+
+        <section class="slot">
+          <img id="slot1" src="css/images/luffy.png" alt="">
+        </section>
+        <section class="stop">
+          <button id="reelOne" type="button" name="button">Stop</button>
+        </section>
+        <section class="slot">
+          <img id="slot2" src="css/images/law.png" alt="">
+        </section>
+        <section class="stop">
+          <button id="reelTwo" type="button" name="button">Stop</button>
+        </section>
+        <section class="slot">
+          <img id="slot3" src="css/images/zoro.png" alt="">
+        </section>
+        <section class="stop">
+          <button id="reelThree" type="button" name="button">Stop</button>
+        </section>
+        <section class="spinToggles">
+          <span>current bet:</span>
+          <h1 id="currentBet">0</h1>
+          <span>Place your bet</span>
+          <button id="increase" type="button" name="button">+</button>
+          <button id="decrease" type="button" name="button">-</button>
+          <button id="spinWheel" type="button" name="button">Spin!</button>
+          <h1 id="gameOver"></h1>
+          <h1 id="youWin"></h1>
+          <h1 id="notMatch"></h1>
+        </section>
+      </section>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="js/main.js"> </script>
+  </body>
+</html>
